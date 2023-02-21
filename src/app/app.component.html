@@ -1,7 +1,19 @@
-<header id="encabezado" class="fixed-top py-2">
-  <div class="container">
-    <h1>Título del sitio web</h1>
-    <p>Descripción del sitio web</p>
+<header id="encabezado" class="fixed-top py-4">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <!-- Logo -->
+      <div class="col-2">
+        <img class="logo" src="assets/imagenes/cepu.png" alt="Logo del sitio web">
+      </div>
+      <!-- Botones -->
+      <div class="col-10 text-end">
+        <button type="button" class="btn btn-primary me-2">Botón 1</button>
+        <button type="button" class="btn btn-primary me-2">Botón 2</button>
+        <button type="button" class="btn btn-primary me-2">Botón 3</button>
+        <button type="button" class="btn btn-primary me-2">Botón 4</button>
+        <button type="button" class="btn btn-primary me-2">Botón 5</button>
+      </div>
+    </div>
   </div>
 </header>
 
@@ -17,15 +29,15 @@
           </div>
           <div class="mb-3">
             <label for="dni" class="form-label">DNI</label>
-            <input type="number" class="form-control" id="dni">
+            <input type="text" class="form-control" id="dni">
           </div>
           <div class="mb-3">
             <label for="nombres" class="form-label">NOMBRES</label>
-            <input type="text" class="form-control" id="nombres">
+            <input type="text" class="form-control" id="nombres" disabled>
           </div>
           <div class="mb-3">
             <label for="apellidos" class="form-label">APELLIDOS</label>
-            <input type="text" class="form-control" id="apellidos">
+            <input type="text" class="form-control" id="apellidos" disabled>
           </div>
           <div class="mb-3">
             <label for="colegio" class="form-label">COLEGIO</label>
@@ -54,6 +66,6 @@
 <!-- Footer -->
 <footer id="footer" class="fixed-bottom py-3">
   <div class="container">
-    <p>Derechos de autor &copy; 2023 - Sitio web</p>
+    <p>Derechos de autor &copy; 2023</p>
   </div>
 </footer>

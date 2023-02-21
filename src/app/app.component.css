@@ -1,13 +1,19 @@
 #encabezado {
     background-color: #0080ff;
     color: white;
+    
   }
   
   #footer {
     background-color: #0080ff;
     color: white;
   }
-  
+
   .container {
     color: black;
+  }
+
+  .logo {
+    width: 95px;
+    margin-left: 60px;
   }

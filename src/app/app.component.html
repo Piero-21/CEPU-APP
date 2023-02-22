@@ -6,13 +6,13 @@
         <img class="logo" src="assets/imagenes/cepu.png" alt="Logo del sitio web">
       </div>
       <!-- Botones -->
-      <div class="col-10 text-end">
+      <!--<div class="col-10 text-end">
         <button type="button" class="btn btn-primary me-2">Botón 1</button>
         <button type="button" class="btn btn-primary me-2">Botón 2</button>
         <button type="button" class="btn btn-primary me-2">Botón 3</button>
         <button type="button" class="btn btn-primary me-2">Botón 4</button>
         <button type="button" class="btn btn-primary me-2">Botón 5</button>
-      </div>
+      </div>-->
     </div>
   </div>
 </header>
@@ -25,7 +25,7 @@
         <div class="col-md-6">
           <div class="mb-3">
             <label for="expediente" class="form-label">EXPEDIENTE</label>
-            <input type="number" class="form-control" id="expediente">
+            <input type="number" class="form-control" id="expediente" max="1250">
           </div>
           <div class="mb-3">
             <label for="dni" class="form-label">DNI</label>
@@ -49,18 +49,20 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="mb-3">
-            <label for="imagen" class="form-label">IMAGEN</label>
-            <input type="file" class="form-control" id="imagen">
+          <div class="mb-3 row">
+            <label for="imagen" class="form-label" style="padding-left: 40px;">SELECCIONE UNA IMAGEN</label>
+            <label for="inputImage" class="btn p-0" style="border: none; background: none;">
+              <input type="file" id="inputImage" style="position: absolute; left: -9999px;" accept="image/*">
+              <img class="rounded mx-auto d-block" id="previewImage" src="assets/imagenes/cepu.png" alt="Descripción de la imagen" class="img-fluid">
+            </label>
           </div>
           <div class="text-end">
-            <button type="submit" class="btn btn-primary">SIGUIENTE</button>
+            <button type="submit" class="btn btn-primary">GUARDAR</button>
           </div>
         </div>
       </div>
     </div>
   </main>
-
 
 
 <!-- Footer -->

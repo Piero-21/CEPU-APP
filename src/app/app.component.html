@@ -49,9 +49,12 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="mb-3">
-            <label for="imagen" class="form-label">IMAGEN</label>
-            <input type="file" class="form-control" id="imagen">
+          <div class="mb-3 row">
+            <label for="imagen" class="form-label" style="padding-left: 200px;">SELECCIONE UNA IMAGEN</label>
+            <button type="button" class="btn p-0" style="border: none; background: none;">
+              <input type="file" id="inputImage" style="display: none;" accept="image/*" onchange="loadImage(event)">
+              <img id="previewImage" src="assets/imagenes/cepu.png" alt="Descripción de la imagen" class="img-fluid">
+            </button>
           </div>
           <div class="text-end">
             <button type="submit" class="btn btn-primary">SIGUIENTE</button>

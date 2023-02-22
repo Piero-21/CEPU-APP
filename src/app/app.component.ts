@@ -1,15 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'CEPU-APP';
-  fileToUpload: File | null = null;
+  ngOnInit() {
+    const inputImage = document.getElementById('inputImage') as HTMLInputElement;
+    const previewImage = document.getElementById('previewImage') as HTMLImageElement;
 
-  handleFileInput(files: FileList) {
-    this.fileToUpload = files.item(0);
+    inputImage.addEventListener('change', (event) => {
+      const file = (event.target as HTMLInputElement).files[0];
+      previewImage.src = URL.createObjectURL(file);
+    });
   }
 }
